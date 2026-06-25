@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Cozy: Study Cafe Recommender</string>
+    <string name="score_format">%1$d/100</string>
+
+    <string-array name="search_criteria">
+        <item>Skor Terbaik</item>
+        <item>Terdekat</item>
+        <item>WiFi Tercepat</item>
+        <item>Harga Termurah</item>
+        <item>Paling Tenang</item>
+        <item>Paling Nyaman</item>
+    </string-array>
+
+    <!-- UI Labels -->
+    <string name="title_ranking">Ranking Cafe</string>
+    <string name="title_tambah">Tambah Cafe</string>
+    <string name="title_edit">Edit Data Cafe</string>
+    <string name="label_ringkasan">Ringkasan Statistik</string>
+    <string name="label_parameter">PARAMETER ANALISIS</string>
+    <string name="label_logika">LOGIKA REKOMENDASI</string>
+    <string name="label_referensi">REFERENSI ILMIAH</string>
+
+    <!-- Default/Placeholder values -->
+    <string name="default_rank">1</string>
+    <string name="default_cafe_name">Nama Cafe</string>
+    <string name="default_distance">0.0 km</string>
+    <string name="default_score">87</string>
+    <string name="default_category">Kategori</string>
+    <string name="default_wifi">85 Mbps</string>
+    <string name="default_price">35k</string>
+    <string name="hint_search_address">Cari Alamat (Ketik &amp; Klik Icon)</string>
+    <string name="btn_simpan">SIMPAN DATA CAFE</string>
+    <string name="desc_app">Aplikasi ini membantu mahasiswa menemukan tempat belajar terbaik menggunakan logika Fuzzy Mamdani.</string>
+</resources>
