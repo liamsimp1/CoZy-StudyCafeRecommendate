@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Edit Parameter Fuzzy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:gravity="center" />
+
+        <!-- WiFi Parameters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="📶 WiFi (Lambat -> Sedang -> Cepat)"
+            android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/et_wifi_lambat_high" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Lambat Max" android:inputType="number"/>
+            <EditText android:id="@+id/et_wifi_sedang_low" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sedang Min" android:inputType="number"/>
+            <EditText android:id="@+id/et_wifi_sedang_mid" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sedang Mid" android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/et_wifi_sedang_high" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sedang Max" android:inputType="number"/>
+            <EditText android:id="@+id/et_wifi_cepat_low" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Cepat Min" android:inputType="number"/>
+        </LinearLayout>
+
+        <!-- Noise Parameters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="🔊 Kebisingan (Sepi -> Sedang -> Ramai)"
+            android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/et_noise_sepi_high" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sepi Max" android:inputType="number"/>
+            <EditText android:id="@+id/et_noise_sedang_low" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sedang Min" android:inputType="number"/>
+            <EditText android:id="@+id/et_noise_sedang_mid" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sedang Mid" android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/et_noise_sedang_high" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Sedang Max" android:inputType="number"/>
+            <EditText android:id="@+id/et_noise_ramai_low" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Ramai Min" android:inputType="number"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Reset ke Default" />
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/brown"
+            android:text="Simpan Parameter"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
